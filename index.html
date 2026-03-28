@@ -12,24 +12,11 @@
     <center>
       <div>
         <canvas id="loadingCanvas" oncontextmenu="event.preventDefault()" width="1536" height="960"></canvas>
-        <canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+        <canvas id="canvas" oncontextmenu="event.preventDefault()" width="1536" height="960"></canvas>
       </div>
     </center>
 
     <script type='text/javascript'>
-      function resizeCanvas() {
-        const canvas = document.querySelector("canvas");
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-      }
-
-      window.addEventListener("resize", resizeCanvas);
-      window.addEventListener("orientationchange", resizeCanvas);
-    // call once
-    resizeCanvas();
-
-
-      
       function goFullScreen(){
             var canvas = document.getElementById("canvas");
             if(canvas.requestFullScreen)
