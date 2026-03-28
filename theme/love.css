@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 h1 {
     font-family: arial;
     color: rgb( 11, 86, 117 );
@@ -15,6 +21,7 @@ body {
     padding: none;
     background-color: rgb( 154, 205, 237 );
     color: rgb( 28, 78, 104 );
+    overflow: hidden;
 }
 
 footer {
@@ -46,4 +53,6 @@ a:hover {
     display: block;
     border: 0px none;
     visibility: hidden;
+    width: 100vw;
+    height: 100vh;
 }
